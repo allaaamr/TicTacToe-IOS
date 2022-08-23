@@ -14,6 +14,8 @@
 		B640AE9F28B4C86C008D1F1C /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640AE9E28B4C86C008D1F1C /* TicTacToeTests.swift */; };
 		B640AEA928B4C86C008D1F1C /* TicTacToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640AEA828B4C86C008D1F1C /* TicTacToeUITests.swift */; };
 		B640AEAB28B4C86C008D1F1C /* TicTacToeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640AEAA28B4C86C008D1F1C /* TicTacToeUITestsLaunchTests.swift */; };
+		B640AEB828B4C885008D1F1C /* XOButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640AEB728B4C885008D1F1C /* XOButton.swift */; };
+		B640AEBA28B4D054008D1F1C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640AEB928B4D054008D1F1C /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		B640AEA428B4C86C008D1F1C /* TicTacToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B640AEA828B4C86C008D1F1C /* TicTacToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeUITests.swift; sourceTree = "<group>"; };
 		B640AEAA28B4C86C008D1F1C /* TicTacToeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B640AEB728B4C885008D1F1C /* XOButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XOButton.swift; sourceTree = "<group>"; };
+		B640AEB928B4D054008D1F1C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +98,12 @@
 		B640AE8C28B4C86B008D1F1C /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				B640AEB728B4C885008D1F1C /* XOButton.swift */,
 				B640AE8D28B4C86B008D1F1C /* TicTacToeApp.swift */,
 				B640AE8F28B4C86B008D1F1C /* ContentView.swift */,
 				B640AE9128B4C86C008D1F1C /* Assets.xcassets */,
 				B640AE9328B4C86C008D1F1C /* Preview Content */,
+				B640AEB928B4D054008D1F1C /* Utils.swift */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			files = (
 				B640AE9028B4C86B008D1F1C /* ContentView.swift in Sources */,
 				B640AE8E28B4C86B008D1F1C /* TicTacToeApp.swift in Sources */,
+				B640AEB828B4C885008D1F1C /* XOButton.swift in Sources */,
+				B640AEBA28B4D054008D1F1C /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
