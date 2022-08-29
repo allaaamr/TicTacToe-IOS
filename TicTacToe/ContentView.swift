@@ -10,7 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @State private var moves = ["","","","","","","","",""]
     @State private var count = 0
-    @State private var endGameText = "TicTacOrange"
+    @State private var title = "TicTacOrange"
+    @State private var endGameText = ""
     @State private var gameEnded = false
     private var ranges = [(0..<3),(3..<6),(6..<9)]
     
@@ -19,7 +20,7 @@ struct ContentView: View {
             Color.black
                 .ignoresSafeArea()
          VStack {
-             Text(endGameText)
+             Text(title)
                  .foregroundColor(.orange)
                  .font(.system(size: 30))
                  .alert(endGameText, isPresented: $gameEnded) {
@@ -48,7 +49,7 @@ struct ContentView: View {
         }
      }
     func resetGame() {
-            endGameText = "TicTacOrange"
+            title = "TicTacOrange"
             moves = ["","","","","","","","",""]
     }
         
@@ -70,6 +71,7 @@ struct ContentView: View {
         
         
     }
+
     func botMove(){
         count += 1
         var availableMoves: [Int] = []
@@ -88,9 +90,9 @@ struct ContentView: View {
             moves[availableMoves.randomElement()!] = "O"
         }
         if checkWinner(list: moves, letter: "O") {
-            endGameText = "You Lost! Try Again Tomorrow"
+            endGameText = "You Lost!"
         }
-        else if (count == 9){
+        else if availableMoves.count == 0{
             endGameText = "It's a tie!"
             print("Tie")
         }
